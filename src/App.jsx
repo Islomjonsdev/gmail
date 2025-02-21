@@ -1,11 +1,10 @@
-import './App.css'
-import { Button } from './components/ui/button'
+import { RouterProvider } from 'react-router'
+import { router } from './pages/Router/Router'
 
 function App() {
-
   return (
     <>
-      <Button>next</Button>
+    <RouterProvider router={router}/>
     </>
   )
 }
