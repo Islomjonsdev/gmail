@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout/Layout";
-import ProtectRoute from "@/components/ProtectRoute/ProtectRoute";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Home/Home";
 import Login from "./Login/Login";
@@ -8,11 +7,7 @@ import Register from "./Register/Register";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      // <ProtectRoute>
-        <Layout />
-      // </ProtectRoute>
-    ),
+    element: <Layout />,
     children: [
       {
         path: "/",
@@ -22,10 +17,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <Register />
-  }
+    element: <Register />,
+  },
 ]);
