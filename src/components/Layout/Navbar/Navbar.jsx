@@ -3,7 +3,7 @@ import UserBox from "@/components/shared/user-box";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@clerk/clerk-react";
-import { Menu } from "lucide-react";
+import { HelpCircle, Menu, Settings } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/gmail.png";
@@ -22,6 +22,12 @@ const Navbar = () => {
       </div>{" "}
       <div className="flex items-center gap-3">
         <ModeToggle />
+        <div className='p-2 hover:bg-[secondary] rounded-full transition' role="button">
+          <HelpCircle className="w-5 h-5"/>
+        </div>
+        <div className='p-2 hover:bg-[secondary] rounded-full transition' role="button">
+          <Settings className="w-5 h-5"/>
+        </div>
         {userId ? (
           <UserBox />
         ) : (
