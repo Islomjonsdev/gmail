@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout/Layout";
-import { useAuth } from "@clerk/clerk-react";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Home/Home";
 import Login from "./Login/Login";
