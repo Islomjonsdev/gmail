@@ -11,7 +11,7 @@ import logo from "../../../assets/images/gmail.png";
 const Navbar = () => {
   const { userId } = useAuth();
   return (
-    <div className="p-2 flex items-center justify-between">
+    <header className="p-2 flex items-center justify-between bg-[#f6f9fc] dark:bg-[#1f1f1f]">
       <div className="flex items-center">
         <Button variant="ghost">
           <Menu className="w-6 h-6" />
@@ -36,7 +36,7 @@ const Navbar = () => {
           </Avatar>
         )}
       </div>
-    </div>
+    </header>
   );
 };
 

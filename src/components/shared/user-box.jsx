@@ -40,7 +40,7 @@ const UserBox = () => {
               </Avatar>
             </div>
             <p className="mb-3">{user?.username}</p>
-            <div className="border border-[grey] p-2 rounded-[20px]">
+            <div className="border border-[grey] p-2 rounded-[20px]" role={"button"}>
               Managa your Google Accounts
             </div>
           </div>
